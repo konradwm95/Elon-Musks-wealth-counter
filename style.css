@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: #5754a8;
+  --second-color: #241a33;
+  --third-color: #fef6ff;
+  --main-text-color: white;
+  --second-text-color: black;
+  --main-border-color: darkgoldenrod;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 2rem;
+  background-color: var(--second-color);
+  border-top: 2px solid var(--main-border-color);
+  border-bottom: 2px solid var(--main-border-color);
+  margin-top: 5vh;
+}
+
+header h1 {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+}
+
+.counter {
+  color: var(--second-text-color);
+}
+
+#net-worth {
+  width: max-content;
+  padding: 10vh 0 5vh 0;
+  margin: auto;
+}
+
+#net-worth-counter {
+  padding: 10px 1rem 10px 2rem;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2rem;
+  border: 5px solid var(--main-border-color);
+  border-radius: 10px;
+  background-color: var(--third-color);
+}
+
+#other-info {
+  min-height: 55vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+  font-size: 1.7rem;
+}
+
+#other-info > div {
+  width: 25%;
+  min-width: 400px;
+  padding: 1em;
+  background-color: var(--second-color);
+  border: 2px solid var(--main-border-color);
+  border-radius: 10px;
+  margin: 4rem;
+}
+
+#other-info .counter {
+  width: max-content;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3em 0.4em;
+  background-color: var(--third-color);
+  border: 5px solid var(--main-border-color);
+  border-radius: 10px;
+  margin-top: 0.8em;
+}
+
+footer {
+  min-height: 20vh;
+  font-size: 2rem;
+  padding: 2.5rem;
+  background-color: var(--second-color);
+  border-top: 2px solid var(--main-border-color);
+  margin: auto;
+}
+
+footer section {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: lightskyblue;
+}
+
+footer .attribution {
+  color: var(--main-border-color);
+}
+
+@media (max-width: 1300px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #net-worth-counter {
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (max-width: 599px) {
+  :root {
+    font-size: 10px;
+  }
+  #other-info > div {
+    width: 80%;
+    min-width: 250px;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  #net-worth-counter {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  #net-worth-counter {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+}
